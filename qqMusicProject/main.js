@@ -1,0 +1,10 @@
+require("./qqAddVenv")
+require("./dataDecrypt")
+require("./jsLoader")
+require("./mode1")
+// require("./proxyVenv")
+inputData=process.argv[2]
+// console.log(inputData);
+console.log(window.yuan(inputData));
+window.lu(inputData).then(res=>console.log(res))
+// window.lu('{"comm":{"cv":4747474,"ct":24,"format":"json","inCharset":"utf-8","outCharset":"utf-8","notice":0,"platform":"yqq.json","needNewCode":1,"uin":3223607546,"g_tk_new_20200303":1188746000,"g_tk":1188746000},"req_1":{"module":"userInfo.VipQueryServer","method":"SRFVipQuery_V2","param":{"uin_list":["3223607546"]}},"req_2":{"module":"userInfo.BaseUserInfoServer","method":"get_user_baseinfo_v2","param":{"vec_uin":["3223607546"]}},"req_3":{"module":"music.lvz.VipIconUiShowSvr","method":"GetVipIconUiV2","param":{"PID":3}},"req_4":{"module":"music.musicasset.SongFavRead","method":"IsSongFanByMid","param":{"v_songMid":["0039MnYb0qxYhV","003cI52o4daJJL","001Bbywq2gicae","002tNzue0g8xQA","002qU5aY3Qu24y","001zMQr71F1Qo8","004Z8Ihr0JIu5s","003aAYrm3GE0Ac","003KtYhg4frNXC","00128N3r2SYKMF","001LTv6e0kyLm5","0013MJ2K2uCNT6","001aSs2S2YKLwD","000SexaG4OVi0d","0018uv642fRWyf","004LlhsV2NmnVY","00289VHm1maXd4","0000Snnm3cEXFP","002uzfkz2kbdIL","001dPKD40OUxFz","004OtIcv22ptDz","0038Er2p0r5aM6","001C38wg2rh0pc","002AdZTO4TdIHS","001DmHQK1pzPaQ","004HSD0I45UCfD","004T1bwN1JmkVc","002P9DZs2VQwHP","004YXcNt0vkmXq"]}},"req_5":{"module":"music.musichallSong.PlayLyricInfo","method":"GetPlayLyricInfo","param":{"songMID":"002tNzue0g8xQA","songID":3586263}},"req_6":{"method":"GetCommentCount","module":"music.globalComment.GlobalCommentRead","param":{"request_list":[{"biz_type":1,"biz_id":"3586263","biz_sub_type":0}]}},"req_7":{"module":"music.musichallAlbum.AlbumInfoServer","method":"GetAlbumDetail","param":{"albumMid":"003Ow85E3pnoqi"}},"req_8":{"module":"music.vkey.GetEVkey","method":"GetUrl","param":{"guid":"5528951906","songmid":["002tNzue0g8xQA"],"songtype":[0],"uin":"3223607546","loginflag":1,"platform":"20","xcdn":1,"filename":["RS02064H4IpS4d0c1J.mp3"],"qdesc":"lq96kOgg"}}}').then(res=>console.log(res))
